@@ -1,0 +1,322 @@
+* {
+  /* Remove as margens padrão */
+  margin: 0;
+  /* Remove o padding padrão */
+  padding: 0;
+  /* Define o modelo de caixa para incluir padding e borda no tamanho total */
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.logo-ge {
+  width: 50px;
+  height: 50px;
+}
+section {
+  padding: 50px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  /* ... seus estilos existentes ... */
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+
+#inicio a:hover {
+  background-color: #ff8d4b;
+}
+
+.container-quem {
+  text-align: center;
+}
+
+.quem-somos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quem-somosg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9edf1;
+}
+
+#quem-somos .button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff6701; /* Orange button */
+  color: white;
+  text-decoration: none;
+  border-radius: 99px;
+  transition: background-color 0.3s ease;
+}
+
+#quem-somos .button:hover {
+  background-color: #b14100; /* Darker orange on hover */
+}
+
+.card {
+  display: flex;
+  width: 900px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.cqsimg {
+  display: flex;
+}
+.qsimg {
+  width: 500px;
+  height: 375px;
+}
+
+/* Header */
+header {
+  display: flex;
+  background-image: url("img/design.png");
+  background-size: cover; /* Redimensiona a imagem para cobrir o header */
+  background-position: top; /* Centraliza a imagem no header */
+  position: relative;
+  height: 600px; /* Ajuste a altura do header para ver mais ou menos da imagem */
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+
+  max-width: 100%;
+}
+
+.container-logo {
+  text-align: center;
+  width: 741px;
+  height: 200px;
+}
+.container-logo img {
+  width: 741px;
+  height: 200px;
+}
+
+.container-lg {
+  display: flex;
+  transform: scale(0.3);
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+}
+
+nav {
+  text-align: center;
+  background-color: rgb(15, 18, 51); /* Cor do menu alterada */
+  display: flex; /* Define o menu como um flexbox */
+  justify-content: center; /* Centraliza o conteúdo do menu */
+  align-items: center; /* Centraliza verticalmente o conteúdo do menu */
+  position: fixed; /* Define o elemento como fixo */
+  top: 0; /* Posiciona o topo do elemento na parte superior da tela */
+  width: 100%; /* Define a largura do elemento para ocupar toda a tela */
+  z-index: 10; /* Define o nível de empilhamento para que o menu fique acima do conteúdo */
+  height: 7%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Define a lista como um flexbox */
+  gap: 20px; /* Define um espaço entre os itens da lista */
+  align-items: center;
+}
+
+nav li {
+  display: inline-block; /* Mantém os itens da lista na mesma linha */
+  margin-left: 0; /* Remove a margem esquerda dos itens da lista */
+}
+
+nav a {
+  font-weight: 600;
+  color: #fffefe; /* Cor do texto do menu */
+}
+
+.feed {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.feedback-item {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(15, 18, 51);
+  color: #fff;
+  padding: 40px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 25%;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  /* Define a largura das colunas */
+  .footer-col {
+    width: 50%;
+    /* Define a margem inferior */
+    margin-bottom: 30px;
+  }
+}
+
+/* Estilos responsivos para telas menores que 600px */
+@media (max-width: 600px) {
+  /* Define a largura das colunas */
+  .footer-col {
+    width: 100%;
+  }
+}
+
+.insta {
+  position: fixed;
+  /* Define a posição inferior como 20 pixels */
+  bottom: 100px;
+  /* Define a posição direita como 10 pixels */
+  right: 30px;
+  /* Define a altura como 70 pixels */
+  height: 70px;
+  /* Define a largura como 70 pixels */
+  width: 70px;
+  transition: width 0.3s, height 0.3s;
+}
+
+/* Define um estilo para a classe 'whats' */
+.whats {
+  /* Define a posição como fixa */
+  position: fixed;
+  /* Define a posição inferior como 20 pixels */
+  bottom: 20px;
+  /* Define a posição direita como 10 pixels */
+  right: 30px;
+  /* Define a altura como 70 pixels */
+  height: 70px;
+  /* Define a largura como 70 pixels */
+  width: 70px;
+  transition: width 0.3s, height 0.3s;
+}
+
+.whats:hover,
+.insta:hover {
+  width: 80px;
+  height: 80px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.anonimo {
+  height: 45px;
+  width: 45px;
+}
+#depoimentos {
+  padding: 40px 0; /* Espaçamento interno */
+  text-align: center; /* Centraliza o título */
+  background-color: #e9edf1;
+}
+
+#depoimentos h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333; /* Cor do texto do título */
+}
+
+.depoimentos-content {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os depoimentos quebrem para a próxima linha em telas menores */
+  justify-content: center; /* Centraliza horizontalmente os depoimentos */
+  gap: 20px; /* Espaço entre os depoimentos */
+}
+
+.depoimento {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  flex: 1 0 30%; /* Largura mínima de 30% para cada depoimento */
+  max-width: 400px; /* Largura máxima para evitar depoimentos muito largos */
+  min-width: 250px;
+}
+
+.depoimento img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Transforma a imagem em um círculo */
+  margin-bottom: 10px;
+}
+
+.depoimento p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #555;
+}

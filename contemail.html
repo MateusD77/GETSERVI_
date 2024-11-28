@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/ge logo .png" />
+    <link rel="stylesheet" href="contato.css" />
+    <title>Envio de Contato</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Envie seu Contato</h1>
+      <p>
+        Para entrar em contato, por favor, envie um e-mail com os seguintes
+        itens:
+      </p>
+      <ul>
+        <li>Seu Currículo atualizado (em formato PDF ou DOCX)</li>
+        <li>Uma breve descrição de suas expectativas e objetivos</li>
+        <li>(Opcional) Seu portfólio online ou exemplos de trabalhos</li>
+      </ul>
+      <p>
+        Clique no botão abaixo para enviar um e-mail preenchido com o assunto e
+        destinatário:
+      </p>
+      <button onclick="abrirEmail()">Enviar E-mail</button>
+      <a
+        href="mailto:matimdouradim@gmail.com?subject=Contato - Envio de Currículo para a GESTSERVI"
+        id="fallbackMailto"
+      >
+        Abrir e-mail
+      </a>
+      <p>
+        Caso o botão acima não funcione, copie este e-mail manualmente:
+        <strong>matimdouradim@gmail.com</strong>.
+      </p>
+    </div>
+  </body>
+  <script src="email.js"></script>
+</html>
